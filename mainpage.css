@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 1500px;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    
+}
+.hero .content{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.hero .content h1{
+    margin: auto;
+    padding: 0;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.hero .content p{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
+    
+}
+
+
+.card1{
+    position: relative;
+    width: 170px;
+    height: 250px;
+    background-image: url(img/cal.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-top: 15px;
+    object-fit: cover;
+    transition: 0.7s ease;
+    
+    
+}
+.card2{
+    position: relative;
+    width: 170px;
+    height: 250px;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 0.7s ease;
+}
+
+.card3{
+    position: relative;
+    width: 170px;
+    height: 250px;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 1px solid gold;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 0.7s ease;
+}
+
+.card4{
+    position: relative;
+    width: 170px;
+    height: 250px;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 0.7s ease;
+}
+
+
+.card1:hover{
+    transform: scale(1.1);
+}
+
+.card2:hover{
+    transform: scale(1.1);
+}
+
+.card3:hover{
+    transform: scale(1.1);
+}
+
+.card4:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+    .hero .content h1{
+        margin: auto;
+        padding: auto;
+        font-size: 2em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .content p{
+        font-size: 0.8em;
+        color: #fff;
+        margin: auto;
+    }
+    
+
+
+
+}
